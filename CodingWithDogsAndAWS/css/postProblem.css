@@ -1,0 +1,76 @@
+
+.tableContainer{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin:2%;
+}
+.probTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+.probTable th {
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+  width: 100%;
+}
+
+.probTable td, .probTable th {
+    border: 1px solid #ddd;
+    text-align: left;
+    margin-left:10px;
+    width: 80%;
+}
+
+.probTable tr{
+    background-color: white;
+}
+
+.probTable tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.probTable tr:hover {
+    background-color: #ddd;
+}
+
+label {
+    color:white;
+    padding:10px;
+    margin-bottom:10px;
+    background-color: black;
+    margin: 2px;
+}
+
+.postButton{
+    color:white;
+    padding:10px;
+    margin-bottom:10px;
+    background-color: black;
+    margin: 0px;
+    width:10%;
+}
+
+.postButton:hover {
+    color:white;
+    padding:10px;
+    margin-bottom:10px;
+    background-color: black;
+    margin: 0px;
+    width:10%;
+    letter-spacing: 0px;
+    font-size:initial;
+    font-weight:normal;
+    transition: 0.0s;
+}
+
+
+.formatIntput {
+    display: inline-block
+}
+
+input {
+    padding:10px;
+}

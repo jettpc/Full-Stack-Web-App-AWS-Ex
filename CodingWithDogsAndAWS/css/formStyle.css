@@ -1,0 +1,66 @@
+/*changing defaults */
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: black;
+  overflow-x: hidden; /*this fixes a problem I'm convinced I didn't create */
+}
+
+.container {
+    background-image: url("../images/Nature.jpg");
+    height: 100%;
+    width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	position: relative;
+}
+
+.hero-text {
+    border: 5px solid black;
+    height: 30%;
+    width:20%;
+    line-height:200%;
+    background: rgba(247, 142, 4, 0.8);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    width: 50%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+}
+
+.inputField {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+

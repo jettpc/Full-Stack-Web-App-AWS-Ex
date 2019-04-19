@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="">
+<!-- When Modernizr runs, it removes the "no-js" class and replaces it with "js". This is a way to apply different CSS rules depending on whether or not Javascript support is enabled. -->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Serverless web application paul-jett">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="css/formStyle.css">
+    <link rel="stylesheet" href="css/problems.css">
+</head>
+<body>
+    <div class="problemsContainer">
+        <div class="midContainer" id="midContainer">
+            <div class="puppyPics" id="puppyPics">
+                <!-- strictly e-->
+            </div>
+            <div id="displayProblem"> <!-- display problem box -->
+                Click "Start" when you're ready to solve problems with some puppies!
+            </div>
+            <div class="inspiration" id="inspiration">
+                Puppy: Looks at you adoringly.
+            </div>
+            <form>
+                <label> Answer: </label>
+                <input type="number" name="number" id="answerBox" step="1">
+            </form>
+            <div class="stopwatch">
+                <div class="controls">
+                    <button class="start" id="startId">Start</button>
+                    <button class="stop" id="stopId">Pet Puppy</button>
+                    <button class="reset" id="resetId">New Question</button>
+                </div>
+                <div class="display">
+                    <span class="minutes">00</span><span>:</span><span class="seconds">00</span>
+                </div>
+            </div>
+        </div> <!--mid container-->
+        <!--nav bar-->
+        <ul>
+            <li><a class="active" href="problems.html">Solve Problems</a></li>
+            <li><a href="post-a-problem.html">Post Problems</a></li>
+            <li><a id="signOut" href="#">Sign Out</a></li>
+        </ul>
+    </div> <!--container picture-->
+        <script src="js/vendor/jquery-3.1.0.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+        <script src="https://js.arcgis.com/4.3/"></script>
+        <script src="js/config.js"></script>
+        <script src="js/cognito-auth.js"></script>
+        <script src="js/problems.js"></script>
+</body>
+</html>

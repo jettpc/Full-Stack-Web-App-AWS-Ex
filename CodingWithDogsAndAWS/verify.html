@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="">
+<!-- When Modernizr runs, it removes the "no-js" class and replaces it with "js". This is a way to apply different CSS rules depending on whether or not Javascript support is enabled. -->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/formStyle.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="hero-text">
+            <form id="verifyForm">
+                <h1 style="font-size:25px; opacity:0.0;">Lower Text</h1>
+                <input type="email" class="inputField" id="emailInputVerify" placeholder="Email" required>
+                <br>
+                <input type="text" class="inputField" id="codeInputVerify" placeholder="Verification Code" pattern=".*" required>
+                <br>
+                <input type="submit" class="button" value="Verify">
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="js/vendor/jquery-3.1.0.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/cognito-auth.js"></script>
+
+</body>
+</html>

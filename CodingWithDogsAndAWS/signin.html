@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="">
+<!-- When Modernizr runs, it removes the "no-js" class and replaces it with "js". This is a way to apply different CSS rules depending on whether or not Javascript support is enabled. -->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/formStyle.css">
+    <link rel="stylesheet" href="css/problems.css">
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="signin.html">Sign In</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+        <div class="hero-text">
+            <form id="signinForm">
+                <h1 style="font-size:30px; opacity:0.0;">Lower Text</h1>
+                <input type="email" class="inputField" id="emailInputSignin" placeholder="Email" required>
+                <br>
+                <input type="password" class="inputField" id="passwordInputSignin" placeholder="Password" pattern=".*" required>
+                <br>
+
+                <input type="submit" class="button" value="Sign In">
+            </form>
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery-3.1.0.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/cognito-auth.js"></script>
+</body>
+</html>

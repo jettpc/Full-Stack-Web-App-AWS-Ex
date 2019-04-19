@@ -1,0 +1,104 @@
+/*changing defaults */
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+/*changing the default from blue with underline for 'a' tag 
+ and making it so there's a cursor change, and new content transitioned in*/
+a:link {						/* link color and decoration */
+   text-decoration: none;		/* gets rid of underline */
+   color: white;
+}
+
+a:visited {						/* what happens when link is visited */
+   text-decoration: none;
+   color: orange;
+}
+
+/*span for contents of 'a' tag (span is like a div - no value, just used for breaking down into a tag*/
+a span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+a span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+a:hover span {
+  padding-right: 25px;
+}
+
+a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.picButton, .boxButton {
+  background-color: black;  /*text modifications*/
+  font-size: 25px;
+  letter-spacing: 5px;
+  text-align: center;
+  left: 35%;		
+  width: 20%;	
+  padding: 18px;
+  opacity: 1;
+}
+
+.picButton {
+  min-width:30%;
+  position: absolute;		/*position modifications */		
+  top: 45%;			/* 45% down */
+}
+
+.boxButton {
+  min-width:30%;
+  position: relative;		/*position modifications */	
+  top: 16%;			/* 16% down */
+}
+
+.box {
+  background-color: orange;
+  height: 150px;
+  opacity: 1;
+}
+
+.parallaxOne, .parallaxTwo, .parallaxThree, .parallaxFour{
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxOne {
+  background-image: url("../images/Nature.jpg");
+  min-height: 100%;
+}
+
+.parallaxTwo {
+  background-image: url("../images/Grand.jpg");
+  min-height: 100%;
+}
+
+.parallaxThree {
+  background-image: url("../images/Li_River.jpg");
+  min-height: 100%;
+}
+
+.parallaxFour {
+  background-image: url("../images/Mirror.jpg");
+  min-height: 100%;
+}
+

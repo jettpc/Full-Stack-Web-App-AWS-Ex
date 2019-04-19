@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="">
+<!-- When Modernizr runs, it removes the "no-js" class and replaces it with "js". This is a way to apply different CSS rules depending on whether or not Javascript support is enabled. -->
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/formStyle.css">
+    <link rel="stylesheet" href="css/problems.css">
+    <link rel="stylesheet" href="css/postProblem.css">
+</head>
+<body>
+
+    <div class="problemsContainer">
+        <div class="midContainer" id="midContainer">
+            <div class="tableContainer">
+                <table class="probTable">
+                    <tr>
+                        <th>Problem</th>
+                        <th>Solution</th>
+                    </tr>
+
+                </table>
+                <table class="probTable" id="probTable"></table>
+            </div>
+
+            <form>
+                <div class="formatInput">
+                    <label> problemQ </label>
+                    <input id="probQ" maxlength="255" required>
+                    <!-- validate the second box is anumber -->
+                    <label> problemA </label>
+                    <input type="number" name="number" id="probA" step="1" required>
+                    <button id='put' class="postButton">Post</button>
+                    <button id='get' class="postButton">Get</button>
+                </div>
+            </form>
+        </div> <!--mid container-->
+        <!--nav bar-->
+        <ul>
+            <li><a href="problems.html">Solve Problems</a></li>
+            <li><a class="active" href="post-a-problem.html">Post Problems</a></li>
+            <li><a id="signOut" href="#">Sign Out</a></li>
+        </ul>
+    </div> <!--container picture-->
+
+        <script src="js/vendor/jquery-3.1.0.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+        <script src="https://js.arcgis.com/4.3/"></script>
+        <script src="js/config.js"></script>
+        <script src="js/cognito-auth.js"></script>
+        <script src="js/postAProblem.js"></script>
+</body>
+</html>
