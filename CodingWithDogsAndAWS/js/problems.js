@@ -1,4 +1,4 @@
-/*global WildRydes _config*/
+
 
 var ProblemsWin = window.ProblemsWin || {};
 
